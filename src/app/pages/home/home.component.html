@@ -1,0 +1,16 @@
+<main>
+  <div class="container">
+    <div class="line-1">
+      <div>
+        <div id="welcome">
+          <h1>{{ welcome.title }}</h1>
+          <h2>{{ welcome.body }}</h2>
+        </div>
+      </div>
+      <app-picture-card *ngFor="let picture of filterLine1(pictures)" [data]="picture" data-aos="fade-in"></app-picture-card>
+    </div>
+    <div class="line-2">
+      <app-picture-card *ngFor="let picture of filterLine2(pictures)" [data]="picture" data-aos="fade-in"></app-picture-card>
+    </div>
+  </div>
+</main>

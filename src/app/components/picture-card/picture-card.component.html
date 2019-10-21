@@ -1,0 +1,8 @@
+<div class="picture-card {{ data.format === 2 ? 'landscape' : 'portrait' }}">
+  <div class="expandable">
+    <img class="{{ data.format === 2 ? 'landscape' : 'portrait' }}"
+         src="assets/{{ data.src }}"
+         alt="{{ data.src }}"
+         (click)="expand($event)">
+  </div>
+</div>
